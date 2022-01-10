@@ -3,7 +3,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { useContext } from "react";
 
-import { Container, CircularButton } from './styles';
+import { Container, DownButton } from './styles';
 import HabitsCheckGlobal from "../../global/HabitsCheckGlobal";
 
 function Footer() {
@@ -15,7 +15,7 @@ function Footer() {
                 <p>Hábitos</p>
             </Link>
             <Link to="/hoje">
-                <CircularButton >
+                <DownButton>
                     <CircularProgressbar
                         value={habitsCheck}
                         text={'Hoje'}
@@ -28,7 +28,7 @@ function Footer() {
                             trailColor: "transparent"
                         })}
                     />
-                </CircularButton>
+                </DownButton>
             </Link>
             <Link to="/historico">
                 <p>Histórico</p>
@@ -36,7 +36,5 @@ function Footer() {
         </Container>
     );
 }
-
-
 
 export default Footer;

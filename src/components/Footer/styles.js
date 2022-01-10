@@ -20,7 +20,7 @@ const Container = styled.div`
   }
 `;
 
-const CircularButton = styled.div`
+const DownButton = styled.div`
   position:absolute;
   width: 90px;
   height:90px;
@@ -29,6 +29,6 @@ const CircularButton = styled.div`
 `;
 
 export {
-    Container,
-    CircularButton,
+  Container,
+  DownButton,
 }

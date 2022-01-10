@@ -37,8 +37,8 @@ function NewHabits({ setHandleHabits }) {
 
     function selectDay(props) {
         if (days.includes(props.id)) {
-            const filterDays = days.filter((item) => item !== props.id);
-            setDays(filterDays);
+            const daysFilter = days.filter((item) => item !== props.id);
+            setDays(daysFilter);
             return;
         }
         setDays([...days, props.id]);
